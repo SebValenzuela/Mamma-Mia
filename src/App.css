@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  display: block !important;
+  place-items: none !important;
+}
+
+.col-4 {
+  max-width: 350px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1, h4 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+.w-75 {
+  width: 75%;
+  border-bottom: solid 1px #fff;
+}
+
+.back-img {
+  background-image: url(./assets/img/pizza-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.dark-back {
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.card-title {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas con igual ancho */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.pizza-card {
+  border: 2px solid #5f5f5f;
+  padding: 10px;
+  text-align: center;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.ingredients {
+  font-weight: 700;
+}
+
+.list-ingredients,
+.ingredients {
+  text-align: left;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 0 20px;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.details {
+  color: #fff;
+  background-color: #0DCAF0;
+}
+
+.cart {
+  color: #fff;
+  background-color: #DD3444;
+}
+
+.card-buttons {
+  margin-bottom: 10px;
+}

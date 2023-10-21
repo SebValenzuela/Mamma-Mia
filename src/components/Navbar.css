@@ -1,0 +1,42 @@
+.container {
+    background-color: #18A1B8;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.container nav {
+    margin: 0;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+}
+
+.container nav p {
+    margin: 0;
+    color: #fff;
+    font-weight: 800;
+}
+
+.container nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.container nav ul li {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.container nav ul li a {
+    color: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}

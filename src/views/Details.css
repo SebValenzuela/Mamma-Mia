@@ -1,0 +1,22 @@
+.container-details {
+    margin: 70px;
+}
+
+.container-details .card-pizza {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-details .card-pizza > .d-flex {
+    border: solid 2px;
+    margin: 0;
+}
+
+.container-details .card-pizza > .d-flex .card-body {
+    padding: 0 20px;
+}
+
+.container-details .card-pizza > .d-flex .card-body #cart-buttom {
+    color: #fff;
+    background-color: #DD3444;
+}
