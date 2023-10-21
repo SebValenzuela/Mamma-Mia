@@ -9,7 +9,7 @@ function NavbarComponent({ totalPrice }) {
                     <p>Pizzeria Mamma Mia</p>
                 </div>
                 <ul>
-                    <li><a className="total-price" href="">Total: ${totalPrice.toFixed(2)}</a></li>
+                    <li><a className="total-price" href="">Total: ${totalPrice ? totalPrice.toFixed(2) : '0.00'}</a></li>
                 </ul>
             </nav>
         </div>

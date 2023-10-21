@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
-  const [cart, setCart] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [cart, setCart] = useState([]); // Usar el estado para mantener el carrito
+  const [totalPrice, setTotalPrice] = useState(0); // Usar el estado para mantener el precio total
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,14 +17,12 @@ function App() {
   }, []);
 
   const goToDetails = (pizzaId) => {
-    // Utiliza la función navigate para dirigir al usuario a la página de detalles
     navigate(`/details/${pizzaId}`);
   };
 
   const addToCart = (pizza) => {
-    setCart([...cart, pizza]);
-    // Actualiza el precio total cuando se agrega una pizza al carrito
-    setTotalPrice(totalPrice + pizza.price / 100);
+    setCart([...cart, pizza]); // Agregar la pizza al carrito
+    setTotalPrice(totalPrice + pizza.price / 100); // Actualizar el precio total
   };
 
   return (
@@ -44,7 +42,7 @@ function App() {
       </div>
       <div className="catalogo">
         {pizzas.map((pizza) => (
-          <div className="col-4">
+          <div className="col-4" key={pizza.id}>
             <div key={pizza.id} className="pizza-card">
               <img className='card-img' src={pizza.img} alt={pizza.name} />
               <div className="card-title">
