@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import OrderDetailView from './views/OrderDetail';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; // Asegúrate de importar Routes
 
 import DetailsView from './views/Details';
@@ -11,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes> {/* Utiliza Routes para definir las rutas */}
         <Route path="/" element={<App />} />
         <Route path="/details/:pizzaId" element={<DetailsView />} /> {/* Define la ruta a Details.jsx */}
+        <Route path="/order-detail" element={<OrderDetailView />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

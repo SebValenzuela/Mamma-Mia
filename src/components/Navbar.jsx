@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Navbar.css'
 
 function NavbarComponent({ totalPrice }) {
@@ -6,10 +7,14 @@ function NavbarComponent({ totalPrice }) {
         <div className="container">
             <nav>
                 <div className="d-flex align-center">
-                    <p>Pizzeria Mamma Mia</p>
+                <Link to="/" className="pizzeria-link">Pizzeria Mamma Mia</Link>
                 </div>
                 <ul>
-                    <li><a className="total-price" href="">Total: ${totalPrice ? totalPrice.toFixed(2) : '0.00'}</a></li>
+                    <li>
+                        <Link to="/order-detail" className="total-price">
+                            Total: ${totalPrice ? totalPrice.toFixed(2) : '0.00'}
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </div>

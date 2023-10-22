@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-.container nav p {
+.container nav a {
     margin: 0;
     color: #fff;
     font-weight: 800;

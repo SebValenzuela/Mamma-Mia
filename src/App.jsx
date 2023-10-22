@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import NavbarComponent from './components/Navbar'
-import DetailsView from './views/Details'
 import './App.css'
 import pizzasData from './../pizzas 2.json'
 import { useNavigate } from 'react-router-dom';
